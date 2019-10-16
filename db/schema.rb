@@ -10,13 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_16_133934) do
+ActiveRecord::Schema.define(version: 2019_10_16_214439) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "locations", force: :cascade do |t|
     t.string "state"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "resorts", force: :cascade do |t|
+    t.string "area_id"
+    t.string "region_id"
+    t.string "country_id"
+    t.string "resort_name"
+    t.string "region_name"
+    t.string "website"
+    t.string "top_elevation"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

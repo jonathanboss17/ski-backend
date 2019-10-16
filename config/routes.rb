@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   post '/login', to: 'auth#create'
 
   resources :locations, only: [:index]
+  resources :resorts, only: [:index]
 end
