@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get '/profile', to: 'users#show'
 
   post '/login', to: 'auth#create'
+
+  resources :locations, only: [:index]
 end
