@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
   resources :locations, only: [:index]
   resources :resorts, only: [:index]
+  resources :posts, only: [:index]
 end
