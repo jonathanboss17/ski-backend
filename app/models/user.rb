@@ -1,11 +1,9 @@
 class User < ApplicationRecord
     has_secure_password
-
-    # has_many :setups 
-    # has_manu :posts
-    # has_many :likes
-    # has_many :comments 
-    # has_many :terrains, through: :setups
+    
+    has_many :posts
+    has_many :likes
+    has_many :comments 
 
     # ----FOllOWERS
     # has_many :following_users, foreign_key: :followee_id, class_name: 'Follow'

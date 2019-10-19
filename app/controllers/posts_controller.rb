@@ -1,6 +1,10 @@
 class PostsController < ApplicationController
     def index
         @posts = Post.all
-        render json: @posts
+        render json: @posts, include: [:likes, :comments]
     end
+
+    # def show
+    #     @post
+    # end
 end

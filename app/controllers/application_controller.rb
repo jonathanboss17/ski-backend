@@ -1,21 +1,17 @@
 class ApplicationController < ActionController::API
-    def issue_token(payload)
-        JWT.encode(payload, "secret")
-    end
+    # def issue_token(payload)
+    #     JWT.encode(payload, "secret")
+    # end
 
-    def decode_token
-        begin
-            payload = JWT.decode(get_token, "secret")[0]
-        rescue JWT::DecodeError
-            nil
-        end
+    def decode_token(token)
+        payload = JWT.decode(token, "secret")[0]
     end
 
     def get_token
-        token = request.headers["Authorization"].split(" ")[1]
+        request.headers["Authorization"]
     end
 
     def current_user 
-        @user = User.find(decode_token["user_id"])
+        @user = User.find(decode_token(get_token)["user_id"])
     end
 end
