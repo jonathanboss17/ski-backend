@@ -1,17 +1,45 @@
 class UsersController < ApplicationController
+    before_action :set_user, only: [:show, :update, :destroy]
+
     def index 
         @users = User.all 
-        render json: @users
+        render json: @users, include: [:posts]
     end
 
     def profile
         render json: current_user, include: [:posts]
     end
 
+    def show
+        render json: @user
+    end
+
     def create
+        @user = User.create(user_params)
+        if @user.valid? 
+            render json: @user
+        else
+            render json: {error: 'COULDNT BE CREATED'}
+        end
+    end
+
+    def update
+        if @user.update(user_params)
+            render json: @user
+        else
+            render json: {error: 'COULDNT BE UPDATED'}
+        end
+    end
+
+    def destroy
+        @user.destroy
     end
 
     private
+    def set_user
+        @user = User.find(params[:id])
+    end
+
     def user_params
         params.require(:user).permit(:username, :password, :bio, :avatar)
     end

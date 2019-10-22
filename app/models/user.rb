@@ -5,11 +5,13 @@ class User < ApplicationRecord
     has_many :likes
     has_many :comments 
 
+    has_many :follows
+
     # ----FOllOWERS
-    # has_many :following_users, foreign_key: :followee_id, class_name: 'Follow'
-    # has_many :followers, through: :following_users
+    has_many :follower_relationships, foreign_key: :following_id, class_name: 'Follow'
+    has_many :followers, through: :follower_relationships, source: :follower
 
     #----FOLLOWEES
-    # has_many :followed_users, foreign_key: :follower_id, class_name: 'Follow'
-    # has_many :followees, through: :followed_users
+    has_many :following_relationships, foreign_key: :user_id, class_name: 'Follow'
+    has_many :following, through: :following_relationships, source: :following
 end
