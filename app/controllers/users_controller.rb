@@ -3,15 +3,15 @@ class UsersController < ApplicationController
 
     def index 
         @users = User.all 
-        render json: @users, include: [:posts]
+        render json: @users, include: [:posts, :followers, :following]
     end
 
     def profile
-        render json: current_user, include: [:posts]
+        render json: current_user, include: [:posts, :followers, :following]
     end
 
     def show
-        render json: @user
+        render json: @user, include: [:posts, :followers, :following]
     end
 
     def create
@@ -33,6 +33,14 @@ class UsersController < ApplicationController
 
     def destroy
         @user.destroy
+    end
+
+    def follow
+        following_relationships.create(following_id: @user.id)
+    end
+
+    def unfollow
+        following_relationships.find_by(following_id: @user.id).destroy
     end
 
     private

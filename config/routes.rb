@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get'/profile', to: 'users#profile'
 
   post '/login', to: 'auth#create'
+  get '/current_user', to: 'auth#show'
 
   resources :locations, only: [:index]
   resources :resorts, only: [:index]

@@ -50,3 +50,5 @@ gem 'city-state'
 
 gem 'rest-client'
 
+gem 'faker'
+

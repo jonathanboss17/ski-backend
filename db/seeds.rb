@@ -12,6 +12,10 @@
 # User.create(username: 'picklerick6969', password: 'test', bio: 'WUBBA LUBBA DUB DUB', avatar: 'https://m.media-amazon.com/images/M/MV5BMGIyYjNhOTUtM2UxNC00MjFlLTkwZGYtNDQ0MDhmNGNkYWNlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg')
 # User.create(username: 'mortyandjessicaforever', password: 'test', bio: 'AWWW JEEZZZ RICK', avatar: 'https://media.tenor.com/images/b899835d3c14b1aaac7bd7d4fc215261/tenor.png')
 
+# Follow.create(user_id: 7, following_id: 8)
+# Follow.create(user_id: 7, following_id: 9)
+# Follow.create(user_id: 7, following_id: 10)
+
 # Post.create(img: 'https://i.imgur.com/qdSQwv5.jpg', caption: 'untamed', user_id: 7)
 # Post.create(img: 'https://i.imgur.com/yz6pzGK.jpg', caption: 'maine in may', user_id: 7)
 # Post.create(img: 'https://i.imgur.com/WOFaR8v.jpg', caption: 'sunsets are just gorgeous', user_id: 7)
@@ -43,6 +47,8 @@
 # Post.create(img: 'https://i.imgur.com/Mm1MV7V.jpg', caption: 'hooch couldnt handle us', user_id: 11)
 # Post.create(img: 'https://i.imgur.com/RNbNeLm.jpg', caption: 'take me back', user_id: 11)
 # Post.create(img: 'https://i.imgur.com/JnXOzbr.jpg', caption: 'livin', user_id: 11)
+
+
 
 # CS.states(:us).each_value do |value|
 #     Location.create(state: value)

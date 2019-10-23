@@ -9,6 +9,17 @@ class AuthController < ApplicationController
         end
     end
 
+    # can use this or just fetch to users show page to get current user
+    # def show 
+    #     id = request.authorization.to_i 
+    #     @user = User.find(id)
+    #     if @user 
+    #         render json: @user
+    #     else 
+    #         render json: {error: 'COULDNT FIND USER'}
+    #     end 
+    # end 
+
     private
     def user_login_params
         params.require(:user).permit(:username, :password)
