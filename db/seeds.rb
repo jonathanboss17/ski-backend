@@ -16,8 +16,8 @@
 # Follow.create(user_id: 7, following_id: 9)
 # Follow.create(user_id: 7, following_id: 10)
 
-# Post.create(img: 'https://i.imgur.com/qdSQwv5.jpg', caption: 'untamed', user_id: 7)
-# Post.create(img: 'https://i.imgur.com/yz6pzGK.jpg', caption: 'maine in may', user_id: 7)
+# Post.create(img: 'https://i.imgur.com/qdSQwv5.jpg', caption: 'untamed', user_id: 25)
+# Post.create(img: 'https://i.imgur.com/yz6pzGK.jpg', caption: 'maine in may', user_id: 25)
 # Post.create(img: 'https://i.imgur.com/WOFaR8v.jpg', caption: 'sunsets are just gorgeous', user_id: 7)
 # Post.create(img: 'https://i.imgur.com/pRJ727g.jpg', caption: 'barren #untamedpt2', user_id: 7)
 # Post.create(img: 'https://i.imgur.com/Q7mZ77z.jpg', caption: 'swimmin anyone? #untamedpt3', user_id: 7)
@@ -59,18 +59,22 @@
 
 # cmd+a to copy everything
 # byebug
-# I commented out the lines below ... but it still filled them with the correct values anyways....LOL
-# data_array.each do |resort| 
-#     Resort.create(
-#         area_id: resort['SkiArea']['id'], 
-#         # region_id: resort['Region'][0]['id'],
-#         # country_id: resort['Region'][0]['RegionsSkiArea']['temp_country'],
-#         resort_name: resort['SkiArea']['name'], 
-#         # region_name: resort['Region'][0]['name'],
-#         website: resort['SkiArea']['official_website'], 
-#         top_elevation: resort['SkiArea']['top_elevation']
-#     )
+
+# data_array.map do |resort| 
+#     if(resort['Region'].first != nil && resort['Region'].first['RegionsSkiArea']['temp_country'] == '184')
+#         Resort.create(
+#             area_id: resort['SkiArea']['id'], 
+#             region_id: resort['Region'].first['id'],
+#             country_id: resort['Region'].first['RegionsSkiArea']['temp_country'],
+#             resort_name: resort['SkiArea']['name'], 
+#             region_name: resort['Region'].first['name'],
+#             website: resort['SkiArea']['official_website'], 
+#             top_elevation: resort['SkiArea']['top_elevation']
+#         )
+#     end
 # end
+
+# byebug
 
 
 
