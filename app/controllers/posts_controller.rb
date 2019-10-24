@@ -13,7 +13,7 @@ class PostsController < ApplicationController
     def create
         @post = Post.create(post_params)
         if(@post.valid?)
-            render json: @post
+            render json: @post, include: [:user, :likes, :comments]
         else
             render json: @post.errors.full_messages
         end

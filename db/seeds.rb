@@ -7,26 +7,26 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# User.create(username: 'jboss17', password: 'test', bio: 'Hiking | Skiing | Longboarding', avatar: 'https://i.imgur.com/TjI858b.jpg')
-# 27
-# User.create(username: 'wtrimble99', password: 'test', bio: 'Wannabe Hiker', avatar: 'https://i.imgur.com/c1x0E4M.jpg')
-# 28
-# User.create(username: 'picklerick6969', password: 'test', bio: 'WUBBA LUBBA DUB DUB', avatar: 'https://m.media-amazon.com/images/M/MV5BMGIyYjNhOTUtM2UxNC00MjFlLTkwZGYtNDQ0MDhmNGNkYWNlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg')
-# 29
-# User.create(username: 'mortyandjessicaforever', password: 'test', bio: 'AWWW JEEZZZ RICK', avatar: 'https://media.tenor.com/images/b899835d3c14b1aaac7bd7d4fc215261/tenor.png')
-# 30
-# User.create(username: 'summerdays', password: 'test', bio: 'whatever', avatar: 'https://res.cloudinary.com/teepublic/image/private/s--EGDiJftO--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507721078/production/designs/1963243_1.jpg')
-# 31
-# User.create(username: 'snowballs_of_fur', password: 'test', bio: 'dogs are superior', avatar: 'https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/snuffles-rick-and-morty-9.33.jpg')
-# 32
-# User.create(username: 'beth_sanchez', password: 'test', bio: 'Am I clone??', avatar: 'https://res.cloudinary.com/teepublic/image/private/s--OHxX9Mnv--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1507721038/production/designs/1963234_1.jpg')
-# 33
-# User.create(username: 'zeepin_around', password: 'test', bio: 'I power Ricks car', avatar: 'https://i.redd.it/tvuzt5dq7u821.jpg')
-# 34
-# User.create(username: 'squanchmaster5000', password: 'test', bio: 'squanchin around', avatar: 'https://fedemalablog.files.wordpress.com/2017/11/maxresdefault.jpg')
-# 35
-# User.create(username: 'jerry', password: 'test', bio: 'the factory 10 setting is always too high', avatar: 'http://www.rickandmortyshow.com/wp-content/uploads/2016/06/jerry1.jpg')
-# 36
+User.create(username: 'jboss17', password: 'test', bio: 'Hiking | Skiing | Longboarding', avatar: 'https://i.imgur.com/TjI858b.jpg')
+
+User.create(username: 'wtrimble99', password: 'test', bio: 'Wannabe Hiker', avatar: 'https://i.imgur.com/c1x0E4M.jpg')
+
+User.create(username: 'picklerick6969', password: 'test', bio: 'WUBBA LUBBA DUB DUB', avatar: 'https://m.media-amazon.com/images/M/MV5BMGIyYjNhOTUtM2UxNC00MjFlLTkwZGYtNDQ0MDhmNGNkYWNlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg')
+
+User.create(username: 'mortyandjessicaforever', password: 'test', bio: 'AWWW JEEZZZ RICK', avatar: 'https://media.tenor.com/images/b899835d3c14b1aaac7bd7d4fc215261/tenor.png')
+
+User.create(username: 'summerdays', password: 'test', bio: 'whatever', avatar: 'https://res.cloudinary.com/teepublic/image/private/s--EGDiJftO--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507721078/production/designs/1963243_1.jpg')
+
+User.create(username: 'snowballs_of_fur', password: 'test', bio: 'dogs are superior', avatar: 'https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/snuffles-rick-and-morty-9.33.jpg')
+
+User.create(username: 'beth_sanchez', password: 'test', bio: 'Am I clone??', avatar: 'https://res.cloudinary.com/teepublic/image/private/s--OHxX9Mnv--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1507721038/production/designs/1963234_1.jpg')
+
+User.create(username: 'zeepin_around', password: 'test', bio: 'I power Ricks car', avatar: 'https://i.redd.it/tvuzt5dq7u821.jpg')
+
+User.create(username: 'squanchmaster5000', password: 'test', bio: 'squanchin around', avatar: 'https://fedemalablog.files.wordpress.com/2017/11/maxresdefault.jpg')
+
+User.create(username: 'jerry', password: 'test', bio: 'the factory 10 setting is always too high', avatar: 'http://www.rickandmortyshow.com/wp-content/uploads/2016/06/jerry1.jpg')
+
 
 # Follow.create(user_id: 27, following_id: 28)
 # Follow.create(user_id: 27, following_id: 29)
