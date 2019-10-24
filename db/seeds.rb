@@ -6,47 +6,73 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
 # User.create(username: 'jboss17', password: 'test', bio: 'Hiking | Skiing | Longboarding', avatar: 'https://i.imgur.com/TjI858b.jpg')
-# User.create(username: 'wtrimble99', password: 'test', bio: 'Wannabe Hiker', avatar: 'https://vignette.wikia.nocookie.net/rickandmorty/images/d/dd/S1e10_doofy.png/revision/latest?cb=20160911021823')
-# User.create(username: 'stoneyboi', password: 'test', bio: 'average skier', avatar: 'https://res.cloudinary.com/teepublic/image/private/s--ksnbIrbJ--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1507721056/production/designs/1963238_1.jpg')
+# 27
+# User.create(username: 'wtrimble99', password: 'test', bio: 'Wannabe Hiker', avatar: 'https://i.imgur.com/c1x0E4M.jpg')
+# 28
 # User.create(username: 'picklerick6969', password: 'test', bio: 'WUBBA LUBBA DUB DUB', avatar: 'https://m.media-amazon.com/images/M/MV5BMGIyYjNhOTUtM2UxNC00MjFlLTkwZGYtNDQ0MDhmNGNkYWNlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg')
+# 29
 # User.create(username: 'mortyandjessicaforever', password: 'test', bio: 'AWWW JEEZZZ RICK', avatar: 'https://media.tenor.com/images/b899835d3c14b1aaac7bd7d4fc215261/tenor.png')
+# 30
+# User.create(username: 'summerdays', password: 'test', bio: 'whatever', avatar: 'https://res.cloudinary.com/teepublic/image/private/s--EGDiJftO--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507721078/production/designs/1963243_1.jpg')
+# 31
+# User.create(username: 'snowballs_of_fur', password: 'test', bio: 'dogs are superior', avatar: 'https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/snuffles-rick-and-morty-9.33.jpg')
+# 32
+# User.create(username: 'beth_sanchez', password: 'test', bio: 'Am I clone??', avatar: 'https://res.cloudinary.com/teepublic/image/private/s--OHxX9Mnv--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1507721038/production/designs/1963234_1.jpg')
+# 33
+# User.create(username: 'zeepin_around', password: 'test', bio: 'I power Ricks car', avatar: 'https://i.redd.it/tvuzt5dq7u821.jpg')
+# 34
+# User.create(username: 'squanchmaster5000', password: 'test', bio: 'squanchin around', avatar: 'https://fedemalablog.files.wordpress.com/2017/11/maxresdefault.jpg')
+# 35
+# User.create(username: 'jerry', password: 'test', bio: 'the factory 10 setting is always too high', avatar: 'http://www.rickandmortyshow.com/wp-content/uploads/2016/06/jerry1.jpg')
+# 36
 
-# Follow.create(user_id: 7, following_id: 8)
-# Follow.create(user_id: 7, following_id: 9)
-# Follow.create(user_id: 7, following_id: 10)
+# Follow.create(user_id: 27, following_id: 28)
+# Follow.create(user_id: 27, following_id: 29)
+# Follow.create(user_id: 27, following_id: 34)
+# Follow.create(user_id: 27, following_id: 35)
+# Follow.create(user_id: 27, following_id: 36)
 
-# Post.create(img: 'https://i.imgur.com/qdSQwv5.jpg', caption: 'untamed', user_id: 25)
-# Post.create(img: 'https://i.imgur.com/yz6pzGK.jpg', caption: 'maine in may', user_id: 25)
-# Post.create(img: 'https://i.imgur.com/WOFaR8v.jpg', caption: 'sunsets are just gorgeous', user_id: 7)
-# Post.create(img: 'https://i.imgur.com/pRJ727g.jpg', caption: 'barren #untamedpt2', user_id: 7)
-# Post.create(img: 'https://i.imgur.com/Q7mZ77z.jpg', caption: 'swimmin anyone? #untamedpt3', user_id: 7)
-# Post.create(img: 'https://i.imgur.com/TjI858b.jpg', caption: 'so granola #untamedpt3', user_id: 7)
-# Post.create(img: 'https://i.imgur.com/k7g86vt.jpg', caption: 'so much water', user_id: 8)
-# Post.create(img: 'https://i.imgur.com/jH9voe0.png', caption: 'no words needed', user_id: 8)
-# Post.create(img: 'https://i.imgur.com/YHLSES9.jpg', caption: 'what a lizard', user_id: 8)
-# Post.create(img: 'https://i.imgur.com/ysSDiKw.jpg', caption: 'legit almost slipped', user_id: 8)
-# Post.create(img: 'https://i.imgur.com/NgGMrCx.jpg', caption: 'idk I ski sometimes', user_id: 8)
-# Post.create(img: 'https://i.imgur.com/c1x0E4M.jpg', caption: 'curvy', user_id: 8)
-# Post.create(img: 'https://i.imgur.com/A9x8k4f.jpg', caption: 'big boi', user_id: 9)
-# Post.create(img: 'https://i.imgur.com/FWksBfX.jpg', caption: 'oh wow so many colors', user_id: 9)
-# Post.create(img: 'https://i.imgur.com/3FUafeJ.jpg', caption: 'lookin', user_id: 9)
-# Post.create(img: 'https://i.imgur.com/Iq9MYiT.jpg', caption: 'AMERICA', user_id: 9)
-# Post.create(img: 'https://i.imgur.com/UvBnKzd.jpg', caption: 'can never have too much air', user_id: 9)
-# Post.create(img: 'https://i.imgur.com/rSKU9QK.jpg', caption: 'a lighthouse', user_id: 9)
-# Post.create(img: 'https://i.imgur.com/VKrGU9t.jpg', caption: 'get out the way fool', user_id: 7)
-# Post.create(img: 'https://i.imgur.com/QwF9hXI.jpg', caption: 'wow two lakes in one photos', user_id: 7)
-# Post.create(img: 'https://i.imgur.com/sDqaEGk.jpg', caption: 'just like ... nature and stuff', user_id: 7)
+# Follow.create(user_id: 35, following_id: 29)
+# Follow.create(user_id: 35, following_id: 32)
+# Follow.create(user_id: 35, following_id: 33)
+# Follow.create(user_id: 35, following_id: 27)
+# Follow.create(user_id: 35, following_id: 31)
 
-# Post.create(img: 'https://i.imgur.com/HQvdPub.jpg', caption: 'pointy #untamedpt3', user_id: 10)
-# Post.create(img: 'https://i.imgur.com/FMRJUeo.jpg', caption: 'just a ... just a ski in the middle of nowhere', user_id: 10)
-# Post.create(img: 'https://i.imgur.com/meUuOtC.jpg', caption: 'well thanks for letting me know', user_id: 10)
-# Post.create(img: 'https://i.imgur.com/bNksvXV.jpg', caption: 'just some guys being dudes', user_id: 10)
-# Post.create(img: 'https://i.imgur.com/9nAJO5Q.jpg', caption: 'tan', user_id: 11)
-# Post.create(img: 'https://i.imgur.com/w28ZoZF.jpg', caption: 'pupper', user_id: 11)
-# Post.create(img: 'https://i.imgur.com/Mm1MV7V.jpg', caption: 'hooch couldnt handle us', user_id: 11)
-# Post.create(img: 'https://i.imgur.com/RNbNeLm.jpg', caption: 'take me back', user_id: 11)
-# Post.create(img: 'https://i.imgur.com/JnXOzbr.jpg', caption: 'livin', user_id: 11)
+# Follow.create(user_id: 28, following_id: 27)
+# Follow.create(user_id: 28, following_id: 29)
+# Follow.create(user_id: 28, following_id: 31)
+# Follow.create(user_id: 28, following_id: 34)
+# Follow.create(user_id: 28, following_id: 35)
+
+# Follow.create(user_id: 28, following_id: 27)
+# Follow.create(user_id: 28, following_id: 29)
+# Follow.create(user_id: 28, following_id: 31)
+# Follow.create(user_id: 28, following_id: 34)
+# Follow.create(user_id: 28, following_id: 35)
+
+# Follow.create(user_id: 36, following_id: 27)
+# Follow.create(user_id: 36, following_id: 28)
+# Follow.create(user_id: 36, following_id: 29)
+# Follow.create(user_id: 36, following_id: 30)
+# Follow.create(user_id: 36, following_id: 31)
+# Follow.create(user_id: 36, following_id: 32)
+# Follow.create(user_id: 36, following_id: 33)
+# Follow.create(user_id: 36, following_id: 34)
+# Follow.create(user_id: 36, following_id: 35)
+
+
+
+
+# Post.create(img: 'https://res.cloudinary.com/jboss17/image/upload/v1571900628/TREES02_fgcaxg.jpg', caption: 'trees #fiscerranger102', user_id: 27)
+# Post.create(img: 'https://res.cloudinary.com/jboss17/image/upload/v1571900627/Kirkwood01_n08gg0.jpg', caption: 'peep the thumb #kirkwood', user_id: 28)
+# Post.create(img: 'https://res.cloudinary.com/jboss17/image/upload/v1571900627/Alex10_k63nx7.jpg', caption: 'gettin schwifty #heavenly', user_id: 29)
+# Post.create(img: 'https://res.cloudinary.com/jboss17/image/upload/v1571900623/IMG_2914_bxbiqz.jpg', caption: 'squanched too hard #pc', user_id: 35)
+# Post.create(img: 'https://res.cloudinary.com/jboss17/image/upload/v1571900622/IMG_2907_mwunio.jpg', caption: 'views from the microverse #pc', user_id: 34)
+# Post.create(img: 'https://res.cloudinary.com/jboss17/image/upload/v1571900618/Tahoe08_mgjssc.jpg', caption: 'lake + mtn #heavenly', user_id: 28)
+# Post.create(img: 'https://res.cloudinary.com/jboss17/image/upload/v1571900618/IMG_0311_etyebt.jpg', caption: 'sent too hard #beavercreek', user_id: 36)
+
 
 
 
