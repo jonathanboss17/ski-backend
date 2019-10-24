@@ -1,5 +1,5 @@
 class FollowsController < ApplicationController
-    before_action :set_user, only: [:destroy]
+    before_action :set_follow, only: [:show, :destroy]
 
     def index
         @follows = Follow.all
@@ -13,6 +13,10 @@ class FollowsController < ApplicationController
         else
             render json: {error: 'COULDNT BE CREATED'}
         end
+    end
+
+    def show
+        render json: @follow
     end
 
     def destroy

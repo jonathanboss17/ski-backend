@@ -11,7 +11,12 @@ class UsersController < ApplicationController
     end
 
     def show
-        render json: @user, include: [:posts, :followers, :following]
+        render json: @user.to_json(:include => {
+            :posts => {:include => [:likes, :comments]}, 
+            :followers => {}, 
+            :following => {}
+        })
+        # include: [:posts, :followers, :following]
     end
 
     def create
